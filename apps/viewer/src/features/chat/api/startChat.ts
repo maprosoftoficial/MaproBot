@@ -20,6 +20,6 @@ export const startChat = publicProcedure
       ...input,
       origin,
     })
-    if (corsOrigin) res.setHeader('Access-Control-Allow-Origin', '*')
+    if (corsOrigin) res.setHeader('Access-Control-Allow-Origin', corsOrigin)
     return response
   })
